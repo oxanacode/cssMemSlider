@@ -122,3 +122,21 @@ label:hover span{
 #slide7:checked ~ .captions-wrapper .captions {
    transform: translateX(-600%);
 }
+
+@media (max-width: 800px) {
+    .main-container {
+       grid-template-areas: 
+          'radio'
+          'slider'
+          'control'
+          'caption';
+    }
+ 
+    .controls {
+       justify-self: center;
+    }
+ 
+    p {
+       min-width: 100vw;
+    }
+}
