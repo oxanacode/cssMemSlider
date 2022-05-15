@@ -83,3 +83,35 @@ label:hover span{
     background-color: #F263CC;
     border-color: #F263CC;
 }
+
+#slide1:checked ~ .controls label:nth-child(1) span,
+#slide2:checked ~ .controls label:nth-child(2) span,
+#slide3:checked ~ .controls label:nth-child(3) span,
+#slide4:checked ~ .controls label:nth-child(4) span,
+#slide5:checked ~ .controls label:nth-child(5) span,
+#slide6:checked ~ .controls label:nth-child(6) span,
+#slide7:checked ~ .controls label:nth-child(7) span {
+   background-color: transparent;
+}
+
+#slide1:checked ~ .slides-wrapper .slides {
+   transform: translateX(0);
+}
+#slide2:checked ~ .slides-wrapper .slides {
+   transform: translateX(-100%);
+}
+#slide3:checked ~ .slides-wrapper .slides {
+   transform: translateX(-200%);
+}
+#slide4:checked ~ .slides-wrapper .slides {
+   transform: translateX(-300%);
+}
+#slide5:checked ~ .slides-wrapper .slides {
+   transform: translateX(-400%);
+}
+#slide6:checked ~ .slides-wrapper .slides {
+   transform: translateX(-500%);
+}
+#slide7:checked ~ .slides-wrapper .slides {
+   transform: translateX(-600%);
+}
