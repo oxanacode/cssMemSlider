@@ -92,7 +92,7 @@ label:hover span {
 }
 
 label:active span {
-    background-color: #79BDED;
+    background-color: transparent;
     border-color: #79BDED;
     transform: scale(0.7);
 }
