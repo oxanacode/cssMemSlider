@@ -80,10 +80,16 @@ label span {
     box-shadow: 0 0.2rem 0.2rem #010712;
 }
  
-label:hover span{
+label:hover span {
     background-color: #F263CC;
     border-color: #F263CC;
     cursor: pointer;
+}
+
+label:active span {
+    background-color: #9AEBED;
+    border-color: #9AEBED;
+    transform: scale(0.7);
 }
 
 #slide1:checked ~ .controls label:nth-child(1) span,
