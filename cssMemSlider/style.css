@@ -83,6 +83,7 @@ label span {
 label:hover span{
     background-color: #F263CC;
     border-color: #F263CC;
+    cursor: pointer;
 }
 
 #slide1:checked ~ .controls label:nth-child(1) span,
