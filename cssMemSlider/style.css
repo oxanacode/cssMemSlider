@@ -80,15 +80,19 @@ label span {
     box-shadow: 0 0.2rem 0.2rem #010712;
 }
  
-label:hover span {
-    background-color: #F263CC;
-    border-color: #F263CC;
+label:hover {
     cursor: pointer;
 }
 
+
+label:hover span {
+    background-color: #F263CC;
+    border-color: #F263CC;
+}
+
 label:active span {
-    background-color: #9AEBED;
-    border-color: #9AEBED;
+    background-color: #79BDED;
+    border-color: #79BDED;
     transform: scale(0.7);
 }
 
