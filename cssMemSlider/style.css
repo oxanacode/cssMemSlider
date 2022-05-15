@@ -78,6 +78,7 @@ label span {
     border: 0.2rem solid #334D66;
     margin: 0.4em;
     box-shadow: 0 0.2rem 0.2rem #010712;
+    transition: 0.2s;
 }
  
 label:hover {
