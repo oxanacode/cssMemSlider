@@ -2,4 +2,84 @@ body {
     margin: 0%;
     background: #13171F;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: 
+       'radio .'
+       'slider slider'
+       'caption control';
+    margin: 0% auto;
+    max-width: 50rem;
+    grid-gap: 2rem;
+    border: 2rem solid transparent;
+}
+ 
+input {
+    grid-area: radio;
+    height: 0%;
+    width: 0%;
+}
+ 
+.slides-wrapper {
+    grid-area: slider;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3%;
+    box-shadow: 0 0.3rem 0.3rem #010712;
+}
+ 
+.slides,
+.captions {
+    display: flex;
+    transition: 1s;
+}
+ 
+.slide,
+.captions div {
+    width: 100%;
+}
+ 
+.captions-wrapper {
+    grid-area: caption;
+    overflow: hidden;
+    width: 25rem;
+}
+ 
+p {
+    flex-shrink: 0;
+    width: 26rem;
+    margin: 0%;
+    font-size: 1.3rem;
+    color: white;
+}
+ 
+.controls {
+    grid-area: control;
+    justify-self: end;
+    display: flex;
+}
+ 
+label {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
  }
+ 
+label span {
+    display: inline-block;
+    user-select: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    background-color: #334D66;
+    border: 0.2rem solid #334D66;
+    margin: 0.4em;
+    box-shadow: 0 0.2rem 0.2rem #010712;
+}
+ 
+label:hover span{
+    background-color: #F263CC;
+    border-color: #F263CC;
+}
